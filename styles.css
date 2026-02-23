@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+/* Fondo con degradado + textura */
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: linear-gradient(to bottom, #b2d7f4, #9abeec);
+    background-image: 
+        linear-gradient(to bottom, #b2d7f4, #9abeec),
+        url("https://www.transparenttextures.com/patterns/grid-me.png");
+
+    background-blend-mode: overlay;
+}
+
+/* Contenedor central */
+.container {
+    background: rgba(255,255,255,0.1);
+    padding: 40px;
+    border-radius: 30px;
+    backdrop-filter: blur(5px);
+    text-align: center;
+}
+
+/* Inputs */
+input {
+    width: 250px;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 25px;
+    border: none;
+    outline: none;
+}
+
+/* Botón con doble efecto */
+.btn-wrapper {
+    display: inline-block;
+    padding: 6px; /* espacio para el borde exterior */
+    border-radius: 50px;
+    border: 1.5px solid #f7f9f9; /* borde exterior */
+    margin-top: 15px;
+}
+
+.btn {
+    width: 220px;
+    padding: 12px 0;
+    border-radius: 50px;
+    border: none;
+    background-color: #f7f9f9;
+    color: #465e7b;
+    font-weight: bold;
+    cursor: pointer;
+
+    box-shadow: 0 0 12px #f7f9f9; /* resplandor */
+    transition: 0.3s;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
+
+.texto{
+    color: #465e7b;
+}
